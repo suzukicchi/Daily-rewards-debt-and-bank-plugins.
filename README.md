@@ -29,8 +29,9 @@
 - **remove**: 指定した金額を減額します。
 
 - 情報取得
-`/daily info`
-`/daily info <プレイヤー名>` 但し、loginbonus.info権限またはOPを持っていた時のみ
+`/daily info` 
+`/daily info <プレイヤー名>` 
+自分の情報を見る場合は必要ありませんが、他プレイヤーの情報を閲覧する場合はloginbonus.info権限またはOPを持っていた時のみ有効です。
 
 ## 設定ファイル (config.yml)
 サーバー運用に合わせて以下の項目をカスタマイズ可能です。
