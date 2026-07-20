@@ -1,0 +1,41 @@
+name: LoginBonusPlugin
+version: 1.3.3
+main: com.example.loginbonus.MainPlugin
+api-version: 1.20
+depend: [Vault]
+
+# ====================================================================
+#  コマンド登録設定
+# ====================================================================
+commands:
+  loginbonus:
+    description: ログインボーナスとローンシステムの総合管理コマンドです。
+    aliases:
+      - daily
+      - デイリー
+      - loan
+      - ローン
+    permission: loginbonus.use
+    usage: /<command> [daily|loan|reload|info|config]
+
+
+  bank:
+    description: 銀行の口座画面を開きます。
+    aliases:
+      - 銀行
+    permission: loginbonus.use
+    usage: /bank
+
+# ====================================================================
+#  権限ノード設定
+# ====================================================================
+permissions:
+  loginbonus.use:
+    description: 一般プレイヤー用のコマンド（GUIオープンなど）を使用する権限です。
+    default: true
+  loginbonus.info:
+    description: 他人の情報をMCID指定して表示する権限です。
+    default: op
+  loginbonus.admin:
+    description: 管理者用のコマンド（リロードや情報確認、コンフィグ変更）を使用する権限です。
+    default: op
